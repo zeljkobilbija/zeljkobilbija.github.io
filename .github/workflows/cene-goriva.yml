@@ -1,0 +1,29 @@
+# Nedeljne cene goriva u SAD (EIA) za aplikaciju Interstate Info → interstate/cene.json
+name: Cene goriva (EIA)
+
+on:
+  schedule:
+    - cron: '0 20 * * 2'   # utorak 20:00 UTC (EIA objavljuje ponedeljkom, praznikom utorkom)
+    - cron: '0 20 * * 3'   # sreda – rezerva ako je objava kasnila
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cene:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install xlrd==2.0.1
+      - run: python .github/scripts/eia_cene.py
+      - name: Commit ako su se cene promenile
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add interstate/cene.json
+          git diff --cached --quiet || git commit -m "Cene goriva (EIA): nedelja $(python -c "import json;print(json.load(open('interstate/cene.json'))['nedelja'])")"
+          git push
