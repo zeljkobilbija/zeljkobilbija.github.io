@@ -11,7 +11,7 @@
 
 <section id="en" lang="en">
 <h1>Motorway Info – Privacy Policy</h1>
-<p class="meta">Effective date: 21 November 2026</p>
+<p class="meta">Effective date: 21 November 2026 (updated: traffic news)</p>
 
 <p>This policy explains how the Android app <strong>Motorway Info</strong> (package
 <code>com.zeljkobilbija001.motorwayinfo</code>), developed by Željko Bilbija, handles your data.</p>
@@ -25,6 +25,16 @@ The motorway information (exits, interchanges, service areas, fuel stations and 
 to find the motorway you are on, the mile and the direction of travel. Driving mode runs only after you start it with a button,
 shows a permanent notification while it is active and stops when you tap Stop or close the app.
 Your location is processed only on your device. It is not stored, not sent to the developer and not shared with anyone.</p>
+
+<h2>Traffic news and notifications</h2>
+<p>The app shows public traffic news (closures, roadworks, incidents) from official sources:
+National Highways (England), Traffic Wales (Wales) and the DfI Traffic Information and Control Centre (Northern Ireland).
+News for England is downloaded through a small relay server operated by the developer on Cloudflare Workers
+(<code>evis-posrednik.zeljkobilbija.workers.dev</code>), which only forwards the public data; news for Wales and Northern Ireland
+is downloaded directly from their public RSS feeds. Each request contains only the motorway name (for example “M25”) and no personal
+data and no location. As with any internet request, the server providers technically receive your IP address; the developer does not
+log or store it. If you allow notifications, the app checks the news about every 15 minutes in the background for the motorway you
+selected or are driving on. You can turn notifications off in the app at any time.</p>
 
 <h2>Advertising (Google AdMob)</h2>
 <p>The app shows ads from Google AdMob, a service of Google Ireland Limited / Google LLC. To serve and measure ads,
@@ -51,7 +61,8 @@ the app only receives confirmation that the purchase exists, so that ads can be 
 That app's own privacy policy then applies. Nothing is sent unless you tap one of these actions.</p>
 
 <h2>Data sources</h2>
-<p>Motorway data © OpenStreetMap contributors, available under the Open Database License (ODbL). Brand logos: Wikimedia Commons;
+<p>Motorway data © OpenStreetMap contributors, available under the Open Database License (ODbL).
+Traffic news: Powered by National Highways’ Transport Data Feeds; Traffic Wales; DfI Traffic Information and Control Centre. Brand logos: Wikimedia Commons;
 trademarks belong to their respective owners.</p>
 
 <h2>Children</h2>
