@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Swiss Road Info – Privacy Policy / Datenschutzerklärung / Informativa sulla privacy</title>
+<title>Swiss Road Info – Privacy Policy / Datenschutzerklärung / Informativa sulla privacy / Politique de confidentialité</title>
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <main>
-<p class="lang"><a href="#en">English</a> · <a href="#de">Deutsch</a> · <a href="#it">Italiano</a></p>
+<p class="lang"><a href="#en">English</a> · <a href="#de">Deutsch</a> · <a href="#it">Italiano</a> · <a href="#fr">Français</a></p>
 
 <section id="en" lang="en">
 <h1>Swiss Road Info – Privacy Policy</h1>
@@ -219,6 +219,78 @@ le richieste sui dati pubblicitari vanno rivolte preferibilmente a Google; puoi 
 <p>Possiamo aggiornare questa informativa. La versione in vigore è sempre disponibile in questa pagina.</p>
 
 <h2>Contatti</h2>
+<p>Željko Bilbija · <a href="mailto:bilbijazeljko@gmail.com">bilbijazeljko@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="fr" lang="fr">
+<h1>Swiss Road Info – Politique de confidentialité</h1>
+<p class="meta">En vigueur depuis le : 26 novembre 2026</p>
+
+<p>Cette politique décrit la manière dont l'application Android <strong>Swiss Road Info</strong> (paquet
+<code>com.zeljkobilbija001.swissroadinfo</code>), développée par Željko Bilbija, traite vos données.</p>
+
+<h2>Données collectées</h2>
+<p>L'application n'a pas de comptes utilisateurs ni de serveurs propres. Le développeur ne collecte, ne conserve et ne vend aucune donnée personnelle.
+Les informations autoroutières (sorties, échangeurs, aires de service, stations-service et aires de repos) sont intégrées à l'application et fonctionnent hors ligne.</p>
+
+<h2>Localisation (Mode conduite et Ma position)</h2>
+<p>Uniquement si vous lancez le <em>Mode conduite</em> ou touchez <em>Ma position</em>, l'application utilise la position de l'appareil (précise et approximative)
+pour déterminer l'autoroute sur laquelle vous vous trouvez, le point kilométrique et le sens de circulation. Le Mode conduite ne fonctionne qu'après
+l'avoir lancé avec un bouton, affiche une notification permanente tant qu'il est actif et s'arrête lorsque vous touchez Arrêter ou fermez l'application.
+Votre position est traitée uniquement sur l'appareil : elle n'est ni enregistrée, ni envoyée au développeur, ni partagée avec qui que ce soit.</p>
+
+<h2>Informations trafic et notifications</h2>
+<p>L'application affiche les informations trafic (accidents, bouchons, fermetures, chantiers) de la Plateforme de données de trafic de l'Office
+fédéral des routes (OFROU/FEDRO), fournies via opentransportdata.swiss. L'application les télécharge via un petit serveur intermédiaire du
+développeur sur Cloudflare Workers (<code>evis-posrednik.zeljkobilbija.workers.dev</code>), qui ne transmet que des messages trafic traités pour
+les autoroutes. La requête ne contient que le numéro de l'autoroute (par ex. « A1 »), aucune donnée personnelle et aucune position. Comme pour
+toute requête Internet, le fournisseur du serveur (Cloudflare, Inc.) reçoit techniquement votre adresse IP ; le développeur ne l'enregistre pas. Si vous autorisez les notifications,
+l'application vérifie cette liste en arrière-plan environ toutes les 15 minutes pour l'autoroute choisie ou celle sur laquelle vous roulez.
+Vous pouvez désactiver les notifications dans l'application à tout moment.</p>
+
+<h2>Publicité (Google AdMob)</h2>
+<p>L'application affiche des annonces de Google AdMob, un service de Google Ireland Limited / Google LLC. Pour diffuser et mesurer les annonces,
+Google peut traiter des informations sur l'appareil telles que l'identifiant publicitaire, l'adresse IP, le modèle de l'appareil et les interactions
+avec l'application, et peut utiliser des cookies ou des technologies similaires. Google peut aussi traiter des données de diagnostic et d'autres
+identifiants décrits dans les règles Google indiquées ci-dessous.</p>
+<p>Dans l'UE/EEE, au Royaume-Uni et en Suisse, l'application demande votre consentement via le formulaire de Google (User Messaging Platform)
+avant le chargement des annonces (art. 6, par. 1, point a du RGPD). Vous pouvez modifier votre choix à tout moment avec le bouton
+<em>Confidentialité</em> (bouclier) de l'écran d'accueil. Sans consentement, Google peut afficher des annonces non personnalisées ou limitées.</p>
+<p>Plus d'informations : <a href="https://policies.google.com/technologies/partner-sites?hl=fr">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a>
+et les <a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>.
+Vous pouvez réinitialiser ou supprimer l'identifiant publicitaire dans les paramètres Android (Google › Annonces).</p>
+<p>L'application elle-même ne demande, ne lit et ne conserve jamais votre adresse e-mail. Les bibliothèques Google intégrées à l'application
+(Google Mobile Ads, services Google Play et Google Play Billing) peuvent traiter des informations limitées liées au compte, comme l'adresse e-mail
+associée à votre compte Google, à des fins de publicité, d'analyse et de prévention de la fraude, conformément aux règles de Google.</p>
+
+<h2>Achat intégré « Supprimer les annonces »</h2>
+<p>L'achat facultatif unique est géré par Google Play Billing. Les données de paiement sont traitées uniquement par Google ;
+l'application reçoit seulement la confirmation de l'achat, afin de supprimer les annonces. Voir les
+<a href="https://policies.google.com/privacy?hl=fr">Règles de confidentialité de Google</a>.</p>
+
+<h2>Partage et cartes</h2>
+<p>Lorsque vous partagez une entrée, l'ouvrez dans une application de cartes, appelez un numéro ou ouvrez un site web, l'application transmet
+les données à l'application que vous choisissez ; sa propre politique de confidentialité s'applique alors. Rien n'est envoyé sans action de votre part.</p>
+
+<h2>Sources des données</h2>
+<p>Données autoroutières © contributeurs OpenStreetMap, sous licence Open Database License (ODbL).
+Informations trafic – Source des données : Office fédéral des routes (OFROU), Plateforme de données de trafic / Federal Roads Office (FEDRO) Traffic Data Platform (TDP). Logos : Wikimedia Commons ;
+les marques appartiennent à leurs propriétaires respectifs.</p>
+
+<h2>Enfants</h2>
+<p>L'application ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment leurs données.</p>
+
+<h2>Vos droits</h2>
+<p>Conformément à la loi fédérale suisse sur la protection des données (LPD) et, le cas échéant, au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité,
+ainsi que du droit d'introduire une réclamation auprès du Préposé fédéral à la protection des données et à la transparence (PFPDT, edoeb.admin.ch). Le développeur ne conservant aucune de vos données, les demandes concernant
+les données publicitaires sont à adresser de préférence à Google ; vous pouvez néanmoins nous contacter.</p>
+
+<h2>Modifications</h2>
+<p>Nous pouvons mettre à jour cette politique. La version en vigueur est toujours disponible sur cette page.</p>
+
+<h2>Contact</h2>
 <p>Željko Bilbija · <a href="mailto:bilbijazeljko@gmail.com">bilbijazeljko@gmail.com</a></p>
 </section>
 
